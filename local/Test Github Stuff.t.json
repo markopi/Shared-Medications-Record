@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "da7da175773a691fe3f2a50033869e70",
+      "MD5-CAM-1.0.1" : "d4f29044d4b39a91b400234d09eb1b29",
       "PARENT:MD5-CAM-1.0.1" : "f27fcd2c287a0280aa857b3cb87c87f8"
     },
     "details" : {
@@ -78,7 +78,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Test Github Stuff",
+          "text" : "Again Test Github Stuff",
           "description" : "rootee"
         }
       }
@@ -107,7 +107,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "a81fa1fa2e6d131bfeb355ed3ddff32d"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.testeee.v0",
     "differential" : true,
