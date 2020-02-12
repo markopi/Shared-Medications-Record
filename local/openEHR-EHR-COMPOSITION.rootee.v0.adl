@@ -1,0 +1,82 @@
+archetype (adl_version=1.4; uid=772bc842-1790-472a-9275-7c17197027ea)
+	openEHR-EHR-COMPOSITION.rootee.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-02-12">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"f27fcd2c287a0280aa857b3cb87c87f8">
+		["build_uid"] = <"9e55dc44-6a71-3e66-a804-76dd84036177">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- rootee
+		category matches {
+			DV_CODED_TEXT[at0001] matches {    -- Coded text
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT[at0002] matches {    -- Event Context
+				other_context matches {
+					ITEM_TREE[at0003] matches {    -- Item tree
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0004] occurrences matches {0..1} matches {    -- Quantee
+								value matches {
+									DV_QUANTITY matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"rootee">
+					description = <"rootee">
+				>
+				["at0001"] = <
+					text = <"Coded text">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Event Context">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Quantee">
+					description = <"*">
+				>
+			>
+		>
+	>
